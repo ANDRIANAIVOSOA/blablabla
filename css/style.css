@@ -1,0 +1,184 @@
+@import url('font.css');
+@font-face { 
+    font-family: hafa; 
+    src: url('font/LeaveNoFingerprints.ttf'); 
+} 
+@font-face { 
+    font-family: nom; 
+    src: url('font/Katalyn.otf'); 
+}
+@font-face { 
+    font-family: text; 
+    src: url('font/Athena-Regular.ttf'); 
+}
+@font-face { 
+    font-family: date; 
+    src: url('font/Silent-Echo.otf'); 
+}
+body {
+    font-size: 15px;
+    margin: 0px;
+    font-family: 'Nunito', sans-serif;
+    background: rgb(48, 79, 93);
+    color: white;
+}
+
+header {
+    text-align: center;
+    /*margin-top: 1em;*/
+    height: 32px;
+}
+.gaucheListe {
+    width: 100%;
+    height: 28px;
+    padding-top: 0.5em;
+   
+    position: relative;
+    text-align: left;
+}
+.profil {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    -webkit-box-shadow: 10px 6px 36px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 6px 36px -8px rgba(0,0,0,0.75);
+    box-shadow: 10px 6px 36px -8px rgba(0,0,0,0.75);
+}
+.content {
+    text-align: center;
+}
+
+.gaucheListe .about {
+    border: 1px solid white;
+    border-radius: 0 8px 8px 0;
+    padding: 0.4em 0.4em 0.4em 0;
+    background: #423b00;
+}
+.gaucheListe .menu {
+    position: absolute;
+
+}
+.gaucheListe:hover .menu {
+    left: 25px;
+    display: inline-block;
+}
+.gaucheListe .menu {
+    display: inline-block;
+    left: -5000px;
+}
+.gaucheListe .menu ul {
+    margin: 0;
+}
+.gaucheListe .menu ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+.gaucheListe .menu ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.nom {
+    margin-top: 1.6em;
+    margin-bottom: 2em;
+    font-family: text;
+    font-size: 2em;
+    line-height: 1em;
+}
+.fa-laptop-code {
+    font-size: 2.5em;
+    color: #423b00;
+}
+.titre {
+    margin-top: 1.3em;
+}
+.titreTexte{
+    padding-bottom: 1em;
+    padding-top: 1em;
+    text-shadow: 3px -8px 7px rgba(0, 0, 0, 1);
+	color: #F6FAEB;
+    font-size: 1.3em;
+    
+}
+
+.content {
+    line-height: 1.2em;
+    padding: 1em 0.6em;
+    min-height: calc(100vh - 32px);
+}
+/* diplom */
+.diplom {
+    background: #423b00;
+}
+.diplom h2{
+    margin-top: 0.5em;
+    margin-bottom: 1.2em;
+}
+.diplom .diplom-item {
+    margin-bottom: 0.8em;
+    width: 75%;
+    border: 1px solid white;
+    display: inline-block;
+    background: rgba(48, 79, 93, 0.29);
+    border: 1px groove rgb(48, 79, 93);   
+}
+.diplom .gauche {
+    float: left;
+    border-radius: 20px 0px 20px 0px;
+    -moz-border-radius: 20px 0px 20px 0px;
+    -webkit-border-radius: 20px 0px 20px 0px;
+}
+.diplom .droite {
+    float: right;
+    border-radius: 20px 0px 20px 0px;
+    -moz-border-radius: 20px 0px 20px 0px;
+    -webkit-border-radius: 20px 0px 20px 0px;
+    
+}
+.diplom .diplom-item .date {
+    display: block;
+    margin-bottom: 0.2em;
+    font-family: date;
+    font-size: 1.3em;
+}
+.diplom .diplom-item .date:hover {
+    cursor: pointer;
+}
+/* fin diplom */
+.contact {
+    background: white;
+    color: rgb(48, 79, 93);
+}
+.contact h2 {
+    margin-top: 3em;
+    margin-bottom: 2em;
+}
+.contact .contact-item {
+    margin-left: 0.5em;
+    text-align: left;
+    padding: 1em 0.6em; 
+}
+.contact .contact-item span{
+    margin-left: 1em;
+}
+.contact .contact-item a{
+    text-decoration: none;
+    color: rgb(48, 79, 93);
+}
+.contact .r-sociaux{
+    text-align: center;
+    margin-top: 3em;
+}
+.contact .r-sociaux a{
+    display: inline-block;
+    width: 40px;
+    height: 40px; 
+    border : 1px solid rgb(48, 79, 93);
+    border-radius: 50%;
+    text-align: center;
+    padding: 0.5em 0.4em 0.2em 0.4em;
+    font-size: 2em;
+}
+footer {
+    position : sticky;
+}
