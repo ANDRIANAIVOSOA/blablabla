@@ -19,7 +19,7 @@ body {
     font-size: 15px;
     margin: 0px;
     font-family: 'Nunito', sans-serif;
-    background: rgb(48, 79, 93);
+    background: rgb(0, 37, 53);
     color: white;
 }
 
@@ -27,6 +27,7 @@ header {
     text-align: center;
     /*margin-top: 1em;*/
     height: 32px;
+    background: #077160de;
 }
 .gaucheListe {
     width: 100%;
@@ -50,9 +51,12 @@ header {
 
 .gaucheListe .about {
     border: 1px solid white;
-    border-radius: 0 8px 8px 0;
+    border-left: none;
+    border-radius: 0 20px 20px 0;
     padding: 0.4em 0.4em 0.4em 0;
-    background: #423b00;
+    background: #077160de;
+    /*position: fixed;
+    z-index: 2;*/
 }
 .gaucheListe .menu {
     position: absolute;
@@ -87,7 +91,7 @@ header {
 }
 .fa-laptop-code {
     font-size: 2.5em;
-    color: #423b00;
+    color: #077160de;
 }
 .titre {
     margin-top: 1.3em;
@@ -106,9 +110,10 @@ header {
     padding: 1em 0.6em;
     min-height: calc(100vh - 32px);
 }
-/* diplom */
+/***** diplom *****/
 .diplom {
-    background: #423b00;
+    overflow: auto;
+    background: #077160de; /*#423b00;*/
 }
 .diplom h2{
     margin-top: 0.5em;
@@ -124,12 +129,14 @@ header {
 }
 .diplom .gauche {
     float: left;
+    padding: 0.4em 0.3em 0.4em 0.3em;
     border-radius: 20px 0px 20px 0px;
     -moz-border-radius: 20px 0px 20px 0px;
     -webkit-border-radius: 20px 0px 20px 0px;
 }
 .diplom .droite {
     float: right;
+    padding: 0.4em 0.3em 0.4em 0.3em;
     border-radius: 20px 0px 20px 0px;
     -moz-border-radius: 20px 0px 20px 0px;
     -webkit-border-radius: 20px 0px 20px 0px;
@@ -141,13 +148,95 @@ header {
     font-family: date;
     font-size: 1.3em;
 }
-.diplom .diplom-item .date:hover {
-    cursor: pointer;
+/***** fin diplom *****/
+
+/***** compétences *****/
+
+.competence {
+    background: white;
+    color: #077160de;
 }
-/* fin diplom */
+.progress-bar {
+    width: 75%;
+}
+.competence .progress-bar h3 {
+    text-align: left;
+}
+.line {
+    height: 25px;
+    text-align: left;
+    height: 25px;
+    line-height: 25px;
+    margin: 0 auto 10px;
+    position: relative; 
+    color: #077160de;
+    padding: 0 0 0 10px;
+}
+.line:before {
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 25px;
+    z-index: 1;
+    background: rgb(0, 37, 53);
+
+}
+.line:after {
+    content: '';
+    background: #333;
+    height: 25px;
+    transition: 0.8s;
+    display: block;
+    width: 100%;
+    /*left: 0;*/
+    top: 0;
+    animation: animate 1 4s;
+    position: absolute;
+    z-index: 2;
+}
+/***** fin compétences *****/
+
+/***** experience *****/
+ 
+.about-us {
+    padding: 1em;
+    overflow: auto;
+}
+.about-us .info1 {
+    display: block;
+    width: 100%;
+}
+.about-us .section_title{
+    margin-bottom: 2.5em;
+}
+.about-us .info1 .info-text {
+    float: left;
+    width: 60%;
+    text-align: left;
+}
+.about-us .info1 .info-text h3{
+    font-family: date;
+    margin: 0;
+    padding: 0;
+}
+.about-us .info1 .info-img {
+    margin-right: 0.5em;
+    float: left;
+    width: 35%;
+}
+.about-us .info1 .info-img img {
+    width: 80px;
+    border-radius: 50%;
+    height: 80px;
+    margin-top: 0.3em;
+}
+/***** fin experience *****/
+/***** contact *****/
 .contact {
     background: white;
-    color: rgb(48, 79, 93);
+    color: rgb(0, 37, 53);
 }
 .contact h2 {
     margin-top: 3em;
@@ -163,7 +252,7 @@ header {
 }
 .contact .contact-item a{
     text-decoration: none;
-    color: rgb(48, 79, 93);
+    color: rgb(0, 37, 53);
 }
 .contact .r-sociaux{
     text-align: center;
@@ -179,6 +268,15 @@ header {
     padding: 0.5em 0.4em 0.2em 0.4em;
     font-size: 2em;
 }
+/***** fin experience *****/
 footer {
+    text-align: center;
+    height: 50px;
+    margin: 0;
+    padding: 0;
     position : sticky;
+    background: #077160de;
+}
+footer div {
+    padding-top: 1.2em;
 }

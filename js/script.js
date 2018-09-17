@@ -2,8 +2,6 @@ let gaucheListe = document.querySelector(".gaucheListe");
 let menu = document.querySelector(".menu");
 let about = document.querySelector(".about");
 let date = document.querySelector(".date");
-let formation = document.querySelector(".formation");
-const tabFormation = [];
 //window.test = undefined;
 //Evenement au moment d'un survol souris
 gaucheListe.onmouseover = function(){

@@ -4,6 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mon portofolio</title>
+    <link href="css/aos.css" rel="stylesheet">
+    <!--link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"-->
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -18,14 +20,20 @@
                             <div class="menu">
                                 <ul>
                                     <li class="hvr-underline-from-center">
-                                        <a href="#diplom">About</a>
+                                        <a href="#">Moi</a>
                                     </li>
                                     <li class="hvr-underline-from-center">
-                                        <a href="#">Portofolio</a>
+                                        <a href="#diplom">Diplomes</a>
+                                    </li>
+                                    <li class="hvr-underline-from-center">
+                                        <a href="#competence">Compétences</a>
+                                    </li>
+                                    <!--li class="hvr-underline-from-center">
+                                        <a href="#experience">Expériences</a>
                                     </li>
                                     <li class="hvr-underline-from-center">
                                         <a href="#contact">Contact</a>
-                                    </li>
+                                    </li-->
                                 </ul>
                             </div>
                         </div>
@@ -44,73 +52,151 @@
                 <p>Aller de l'avant, pour réussir dans un monde en évolution. Aller de l'avant avance continuellement! L'informatique, c'est ma passion!</p>
             </div>
         </section>
+
+        <section class="content competence">
+            <a id="competence">&nbsp;</a>
+            <div class="section_title">
+                <h2>Comptétences</h2>
+            </div>
+            <div class="progress-bar">
+                <h3>HTML / CSS3</h3>
+                <div class="line line1">70%</div>
+                <h3>Javascript</h3>
+                <div class="line line2">50%</div>
+                <h3>PHP</h3>
+                <div class="line line3">65%</div>
+                <h3>RUBY</h3>
+                <div class="line line4">70%</div>
+            </div>
+
+        </section>
+
         <section class="content diplom">
             <a id="diplom">&nbsp;</a>
-            <h2>Diplome et Formation</h2>
-            <div class="diplom-item gauche">
+            <h2>Diplomes et Formations</h2>
+            <div class="diplom-item gauche" data-aos="flip-down">
                 <span class="date">2017-2018</span>
-                <span class="formation">Formation en Dévéloppement web chez <a target="__blank" href="">The Hacking Project</a> par <a target="__blank" href="">SAYNA</a></span>
+                <span class="formation">Formation en Dévéloppement web chez <a target="__blank" href="">The Hacking Project</a> par <a target="__blank" href="http://sayna.io">SAYNA</a></span>
             </div>
-            <div class="diplom-item droite">
+            <div class="diplom-item droite" data-aos="flip-up">
                 <span class="date">2016-2017</span>
                 <span class="formation">Formation en HTML, CSS, Javascript & PHP au <a target="__blank" href="">Nir'Info</a></span>
             </div>
-            <div class="diplom-item gauche">
+            <div class="diplom-item gauche" data-aos="flip-down">
                 <span class="date">2015-2016</span>
                 <span class="formation">Formation en Java SE au <a target="__blank" href="">CENTIC-Mada</a></span>
             </div>
-            <div class="diplom-item droite">
+            <div class="diplom-item droite" data-aos="flip-up">
                 <span class="date">2014</span>
                 <span class="formation">3 ème Année en Informatique de Gestion au <a target="__blank" href="">CNTEMAD</a></span>
             </div>
-            <div class="diplom-item gauche">
+            <div class="diplom-item gauche" data-aos="flip-down">
                 <span class="date">2013</span>
                 <span class="formation">Diplôme de Technicien Supérieur spécialisé en Réseau Système au <a target="__blank" href="">CNTEMAD</a></span>
             </div>
-            <div class="diplom-item droite">
+            <div class="diplom-item droite" data-aos="flip-up">
                 <span class="date">2011</span>
                 <span class="formation">3 ème Année à l’EUROI, spécialisé en Electronique</span>
             </div>
-            <div class="diplom-item gauche">
+            <div class="diplom-item gauche" data-aos="flip-down">
                 <span class="date">2008</span>
                 <span class="formation">Baccalauréat série C au Lycée d’Enseignement General Tsiroanomandidy</span>
             </div>
             
         </section>
-        <section class="content contact">
-            <div>
-                <a id="contact">&nbsp;</a>
-                <h2>Contact</h2>
-                <div class="contact-item">
-                    <i class="fa fa-map-marker-alt"></i> 
-                    <span><a target="__blank" href="https://www.google.mg/maps/place/Ambohimanarina,+Antananarivo/@-18.8735009,47.4978765,236m/data=!3m1!1e3!4m5!3m4!1s0x21f080f3e74c3d6b:0x3b8e402596472dc!8m2!3d-18.870301!4d47.4931828?hl=en">Ambohimanarina</a></span>
+        
+        <section class="content about-us">
+            <a id="experience">&nbsp;</a>
+            <div class="container">
+                <div class="section_title">
+                    <h2>Expériences</h2>
                 </div>
-                <div class="contact-item">
-                    <i class="fa fa-phone animated infinite slower shake"></i>
-                    <span><a href="tel:+261344109128">+261 34 41 091 28</a></span>
+                <div class="info1">
+                    <div class="info-img">
+                        <img src="img/p4h.jpg" alt="Passion For Humanity">
+                    </div>
+                    <div class="info-text">
+                        <h3>15 Juillet 2018 au Janvier 2019 - Stagiaire du Passion for Humanity</h3>
+                        <p> En altérnance (Sayna & P4H) en tant que dévéloppeur web</p>
+                    </div>
                 </div>
-                <div class="contact-item">
-                    <i class="fa fa-envelope"></i>
-                    <span><a href="mailto:fenitraandrianaivosoa@gmail.com">fenitraandrianaivosoa@gmail.com</a></span>
+                <div class="info1">
+                    <div class="info-img">
+                        <img src="img/gret.png" alt="GRET">
+                    </div>
+                    <div class="info-text">
+                        <h3>2015 - Agent enquêteur du GRET</h3>
+                        <p>Dans le projet eau et assainissement dans le commune d’Ampasimbe/TOAMASINA </p>
+                    </div>
                 </div>
-                <div class="contact-item r-sociaux">
-                    <a href="https://www.facebook.com/fenitra.andrianaivosoa"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-skype"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a> 
+                <div class="info1">
+                        <div class="info-img">
+                            <img src="img/numerika.png" alt="Numerika">
+                        </div>
+                        <div class="info-text">
+                            <h3>2017 - Stagiaire du Numerika</h3>
+                            <p>Dévéloppeur web, pour la maintenance de site <a target="__blank" href="http://www.numerika.center/">&nbsp;Numerika</a></p>
+                        </div>
+                    </div>
+                <div class="info1">
+                    <div class="info-img">
+                        <img src="img/hermes-conseil.JPG" alt="Hermes Conseils">
+                    </div>
+                    <div class="info-text">
+                        <h3>2016 - Superviseur d’une enquête du HERMES CONSEILS</h3>
+                        <p>Dans le Projet VATSIN’ANKOHONANA dans les districts de MANAKARA et d’AMBOHIMAHASOA</p>
+                    </div>
+                </div>
+                <div class="info1">
+                    <div class="info-img">
+                        <img src="img/project.png" alt="Projets informatique">
+                    </div>
+                    <div class="info-text">
+                        <h3>Projets Informatique</h3>
+                        <p>
+                            Réalisation d'une application de Bureau en Java intitulée « Gestion d’une auto-école »<br>
+                            Réalisation d'un site web en PHP du Géstion d'un établissement.<br>
+                            Membre de l'équipe pour la réalisation d'un site web en Rubyonrails, intitulée <a target="__blank" href="https://github.com/andriamalala5056/e-anatra-2.0.">E-anatra</a><br>
+                            Membre de l'équipe pour la réalisation d'un site de petites annonces en NodeJs & Angular6, intitulée<a target="__blank" href="http://52.169.54.188/primora">&nbsp;Primora</a>
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
+        <section class="content contact">
+            <a id="contact">&nbsp;</a>
+            <h2>Contact</h2>
+            <div class="contact-item">
+                <i class="fa fa-map-marker-alt"></i> 
+                <span><a target="__blank" href="https://www.google.mg/maps/place/Ambohimanarina,+Antananarivo/@-18.8735009,47.4978765,236m/data=!3m1!1e3!4m5!3m4!1s0x21f080f3e74c3d6b:0x3b8e402596472dc!8m2!3d-18.870301!4d47.4931828?hl=en">Ambohimanarina</a></span>
+            </div>
+            <div class="contact-item">
+                <i class="fa fa-phone animated infinite slower shake"></i>
+                <span><a href="tel:+261344109128">+261 34 41 091 28</a></span>
+            </div>
+            <div class="contact-item">
+                <i class="fa fa-envelope"></i>
+                <span><a href="mailto:fenitraandrianaivosoa@gmail.com">fenitraandrianaivosoa@gmail.com</a></span>
+            </div>
+            <div class="contact-item r-sociaux">
+                <a href="https://www.facebook.com/fenitra.andrianaivosoa"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-skype"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a> 
+            </div>
+        </section>
         <footer>
-
-            <ul>
-                <li><a href="#">fb</a></li>
-                <li><a href="#">twit</a></li>
-                <li><a href="#">gmail</a></li>
-            </ul>
+            <div>
+                <span>&copy; Fenitra</span>
+            </div>
         </footer>
     </div>
     <!-- ny non bloquant rehetra atao aty ambany -->
-    <link href="css /hover-min.css" rel="stylesheet" media="all">
+    <!--script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script-->
+    <script src="js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <link href="css/hover-min.css" rel="stylesheet" media="all">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <script src="js/script.js"></script>
 </body>
