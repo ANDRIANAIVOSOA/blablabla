@@ -154,47 +154,44 @@ header {
 
 .competence {
     background: white;
-    color: #077160de;
+    color: rgb(0, 37, 53);
+}
+.competence .section_title h2 {
+    margin-bottom: 2em;
 }
 .progress-bar {
-    width: 75%;
+    width: 80%;
 }
 .competence .progress-bar h3 {
     text-align: left;
+    font-size: 1em;
 }
-.line {
-    height: 25px;
-    text-align: left;
-    height: 25px;
-    line-height: 25px;
-    margin: 0 auto 10px;
-    position: relative; 
-    color: #077160de;
-    padding: 0 0 0 10px;
-}
-.line:before {
-    content: '';
-    width: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 25px;
-    z-index: 1;
+.competence .progress-bar .test {
     background: rgb(0, 37, 53);
-
-}
-.line:after {
-    content: '';
-    background: #333;
-    height: 25px;
-    transition: 0.8s;
-    display: block;
+    height: 1.7em;
     width: 100%;
-    /*left: 0;*/
-    top: 0;
-    animation: animate 1 4s;
-    position: absolute;
-    z-index: 2;
+    margin: 0;
+    padding: 0;
+}
+.competence .progress-bar .test .sous-test{
+    background: #077160de;
+    height: 1.1em;
+    margin: 0;
+    padding: 0.3em;
+    color: white;
+    text-align: right;
+}
+.competence .progress-bar .test .st-1 {
+    width: 75%;
+}
+.competence .progress-bar .test .st-2 {
+    width: 50%;
+}
+.competence .progress-bar .test .st-3 {
+    width: 60%;
+}
+.competence .progress-bar .test .st-4 {
+    width: 75%;
 }
 /***** fin compétences *****/
 
@@ -279,4 +276,10 @@ footer {
 }
 footer div {
     padding-top: 1.2em;
+}
+
+@media (min-width: 389px) {
+    body {
+        background-color: red;
+    }
 }
